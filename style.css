@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+}
+
+.container header {
+  background-color: #008080;
+  width: 100vw;
+  height: 6vmax;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container header img {
+  height: 4vmax;
+  width: 4vmax;
+  margin: 1vmax 0 1vmax 4vmax;
+}
+
+.container header nav {
+  height: 6vmax;
+  width: 92vw;
+}
+
+.container header nav .menuBar {
+  font-size: 5vmax;
+  font-weight: bolder;
+  position: absolute;
+  right: 5vw;
+  bottom: .5vmax;
+  color: white;
+  height: 100%;
+}
+
+.container header nav ul {
+  display: none;
+  background-color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: calc(100vh - 6vmax);
+  width: 100vw;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: absolute;
+  right: 0;
+  top: 6vmax;
+}
+
+.container header nav ul li {
+  font-weight: bolder;
+  margin: 0 0 6vh 0;
+  padding-left: 4vh;
+}
+
+.container header nav ul li:first-child {
+  margin-top: 10vh;
+}
+
+.container header nav ul li :link {
+  color: #008080;
+}
+
+.container header nav ul li.active {
+  background-color: #008080;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 3vh 0 3vh 4vh;
+}
+
+.container header nav ul li.active :link {
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .container header nav .menuBar {
+    display: none;
+  }
+  .container header nav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: transparent;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 6vmax;
+    width: 100%;
+    position: relative;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container header nav ul li {
+    font-weight: bolder;
+    margin: 0 0 6vh 7vw;
+    padding: .5vw;
+    margin: 0 1.5vw;
+  }
+  .container header nav ul li:first-child {
+    margin: 0 1.5vw;
+  }
+  .container header nav ul li :link {
+    color: white;
+  }
+  .container header nav ul li.active {
+    background-color: white;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    padding: 1vmax 1vw 1vmax 1vw;
+  }
+  .container header nav ul li.active :link {
+    color: #008080;
+  }
+}
+
+.container main section {
+  font-size: 3.5vw;
+  width: 100vw;
+  height: 60vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container main section:nth-child(odd) {
+  background-color: rebeccapurple;
+}
+
+.container footer {
+  background-color: #008080;
+  color: white;
+}
+
+.container footer .footerContainer {
+  padding: 2vh 5vw;
+}
+
+.container footer .footerContainer h4 {
+  font-size: 3vmax;
+  margin-bottom: 2vmin;
+}
+
+.container footer .footerContainer a {
+  font-size: 2vmax;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1vh 0;
+  color: white;
+}
+
+.container footer .footerContainer a img {
+  height: 2vmax;
+  width: 2vmax;
+}
+
+.container footer .footerContainer a span {
+  margin-left: 1vmax;
+}
+
+.container footer h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  color: #008080;
+  padding: 2vh 5vw;
+}
+
+.container footer h3 span {
+  margin-right: .5vw;
+}
+
+.container footer .whatsapp {
+  height: 8vh;
+  width: 8vh;
+  position: fixed;
+  z-index: 100;
+  right: 5vmin;
+  bottom: 5vh;
+}
+/*# sourceMappingURL=style.css.map */
