@@ -183,8 +183,22 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 1vh 0;
+  margin: 3vh 0;
   color: white;
+  position: relative;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 2vmin;
+  border-radius: 2vmax;
+  border: 2px solid white;
+  -webkit-box-shadow: 0px 0.5vmax white;
+          box-shadow: 0px 0.5vmax white;
+}
+
+.container footer .footerContainer a:hover, .container footer .footerContainer a:active {
+  top: .4vmax;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .container footer .footerContainer a img {
