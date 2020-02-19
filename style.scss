@@ -119,16 +119,28 @@ body{
 
     }
     main{
+        border-top: red;
         section{
             font-size: 3.5vw;
             width: 100vw;
             height: 60vw;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-                &:nth-child(odd){
-                    background-color: rebeccapurple;
+            &:nth-child(even){
+                background-color: rebeccapurple;
+            }
+            &.homeIntro{
+                align-items: flex-start;
+                padding: 5vw;
+                height: 100vmin;
+                h1{
+                    font-size: 8vw;
+                    border-right: 1px solid black;
                 }
+            }
+            
         }
     }
 
