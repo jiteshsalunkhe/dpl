@@ -92,7 +92,7 @@ const backgroundImageSetter = (element, ImageName) => {
 
 
 (function (){
-    let homeImage = document.querySelector('.homeIntro');
+    let homeImage = document.querySelector('.homeIntro .backgroundImage');
 
     backgroundImageSetter(homeImage, 'ship')
 }());

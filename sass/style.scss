@@ -136,34 +136,53 @@ body{
             &.homeIntro{
                 width: 100vw;
                 height: 120vw;
-                background-repeat: no-repeat;
-                object-fit: cover;
-                img{
-                    height: 15vmin;
-                    width: 30vmin;
-                }
-                h1{
-                    font-size: 10vmax;
-                    border-right: 1px solid black;
-                    margin: 8vh 0;
-                }
-                h3{
-                    font-size: 8vw;
-                    box-sizing: content-box;
-                    padding: 1vmin 5vmin;
-                    background-color: $color-theme;
-                    color: $color-white;
-                    border-radius: 5vmin;
-                    border: .5vmin solid white;
-                    box-shadow: 0 1vmin $color-white;
-                }
+                position: relative;
                 @media (orientation: 'landscape'){
                     height: calc(100vh - 6vmax);
+                }
+                .backgroundImage{
+                    height: 100%;
+                    width: 100%;
+                    filter: blur(2.5px);                    
+                    background-repeat: no-repeat;
+                    object-fit: cover;
+                }
+                .content{
+                    width: 100%;
+                    height: 100%;
+                    background-color: transparent;
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        height: 15vmin;
+                        width: 30vmin;
+                    }
                     h1{
-                        margin: 6vh;
+                        font-size: 18vw;
+                        border-right: 1px solid black;
+                        margin: 8vh 0;
                     }
                     h3{
-                        font-size: 3.5vw;
+                        font-size: 8vw;
+                        box-sizing: content-box;
+                        padding: 1vmin 5vmin;
+                        background-color: $color-theme;
+                        color: $color-white;
+                        border-radius: 5vmin;
+                        border: .5vmin solid white;
+                        box-shadow: 0 1vmin $color-white;
+                    }
+                    @media (orientation: 'landscape'){
+                        h1{
+                            margin: 6vh;
+                            font-size: 14vw;
+                        }
+                        h3{
+                            font-size: 3.5vw;
+                        }
                     }
                 }
             }
