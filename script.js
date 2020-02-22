@@ -40,7 +40,7 @@ class TypeWriter {
         }
 
         this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
-        let typeSpeed = 300;
+        let typeSpeed = 200;
 
         if(this.isDeleting) {
             typeSpeed /= 2;
@@ -51,7 +51,7 @@ class TypeWriter {
         } else if(this.isDeleting && this.txt === '') {
             this.isDeleting = false;
             this.wordIndex++;
-            typeSpeed = 500;
+            typeSpeed = 350;
         }
 
         setTimeout(() => this.type(), typeSpeed);
@@ -65,3 +65,34 @@ function init() {
     const wait = txtElement.getAttribute('data-wait');
     new TypeWriter(txtElement, words, wait);
 }
+
+const backgroundImageSetter = (element, ImageName) => {
+    if (window.innerHeight > window.innerWidth){
+        if(window.innerWidth <= 420){
+            element.style.backgroundImage = `url('img/${ImageName}_s.jpg')`
+        }else if(window.innerWidth <= 600){
+            element.style.backgroundImage = `url('img/${ImageName}_m.jpg')`
+        }else if(window.innerWidth <= 800){
+            element.style.backgroundImage = `url('img/${ImageName}_l.jpg')`
+        }else{
+            element.style.backgroundImage = `url('img/${ImageName}_xl.jpg')`
+        }
+    }else{
+        if(window.innerWidth <= 760){
+            element.style.backgroundImage = `url('img/${ImageName}2_s.jpg')`
+        }else if(window.innerWidth <= 1400){
+            element.style.backgroundImage = `url('img/${ImageName}2_m.jpg')`
+        }else if(window.innerWidth <= 1920){
+            element.style.backgroundImage = `url('img/${ImageName}2_l.jpg')`
+        }else{
+            element.style.backgroundImage = `url('img/${ImageName}2_xl.jpg')`
+        }
+    }
+};
+
+
+(function (){
+    let homeImage = document.querySelector('.homeIntro');
+
+    backgroundImageSetter(homeImage, 'ship')
+}());

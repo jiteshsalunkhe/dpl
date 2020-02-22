@@ -140,13 +140,12 @@ body {
 }
 
 .container main {
-  border-top: red;
+  color: black;
 }
 
 .container main section {
   font-size: 3.5vw;
   width: 100vw;
-  height: 60vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,16 +166,47 @@ body {
 }
 
 .container main section.homeIntro {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 5vw;
-  height: 100vmin;
+  width: 100vw;
+  height: 120vw;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container main section.homeIntro img {
+  height: 15vmin;
+  width: 30vmin;
 }
 
 .container main section.homeIntro h1 {
-  font-size: 8vw;
+  font-size: 10vmax;
   border-right: 1px solid black;
+  margin: 8vh 0;
+}
+
+.container main section.homeIntro h3 {
+  font-size: 8vw;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 1vmin 5vmin;
+  background-color: #008080;
+  color: white;
+  border-radius: 5vmin;
+  border: .5vmin solid white;
+  -webkit-box-shadow: 0 1vmin white;
+          box-shadow: 0 1vmin white;
+}
+
+@media (orientation: landscape) {
+  .container main section.homeIntro {
+    height: calc(100vh - 6vmax);
+  }
+  .container main section.homeIntro h1 {
+    margin: 6vh;
+  }
+  .container main section.homeIntro h3 {
+    font-size: 3.5vw;
+  }
 }
 
 .container footer {
@@ -260,4 +290,3 @@ body {
   right: 5vmin;
   bottom: 5vh;
 }
-/*# sourceMappingURL=style.css.map */
