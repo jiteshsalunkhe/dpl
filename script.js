@@ -66,7 +66,7 @@ function init() {
     new TypeWriter(txtElement, words, wait);
 }
 
-const backgroundImageSetter = (element, ImageName) => {
+const imageSizeSelector = (element, ImageName) => {
     if (window.innerHeight > window.innerWidth){
         if(window.innerWidth <= 420){
             element.style.backgroundImage = `url('img/${ImageName}_s.jpg')`
@@ -91,8 +91,8 @@ const backgroundImageSetter = (element, ImageName) => {
 };
 
 
-(function (){
+(function imageSizeSetter(){
     let homeImage = document.querySelector('.homeIntro .backgroundImage');
-
-    backgroundImageSetter(homeImage, 'ship')
+    imageSizeSelector(homeImage, 'ship');
+    // window.addEventListener('orientationchange', imageSizeSelector(homeImage, 'ship'))
 }());
