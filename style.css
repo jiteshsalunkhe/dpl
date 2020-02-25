@@ -229,10 +229,11 @@ body {
 
 .container main section.homeIntro .content div span.a {
   font-size: 2vmax;
+  margin-bottom: 1vh;
 }
 
 .container main section.homeIntro .content div span.b {
-  font-size: 3vmax;
+  font-size: 2.5vmax;
 }
 
 .container main section.homeIntro .content h1 {
