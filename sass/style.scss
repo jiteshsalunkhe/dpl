@@ -264,10 +264,10 @@ body{
                 border: $color-theme solid;
                 border-radius: 4vh;
                 color: $color-theme;
-                font-size: 6vw;
+                font-size: 4vh;
                 @media (orientation: 'landscape'){
                     height: 7.5vh;                    
-                    font-size: 4vw;
+                    font-size: 5vh;
                     
                 }
             }
@@ -319,7 +319,7 @@ body{
             margin: 1vh 0 2vh 6.5vw;
             background-color: $color-theme;
             color: $color-white;
-            font-size: 3vmax;
+            font-size: 3.5vh;
             border: 1vmin solid #aaa;
             border: .5vh solid red;
             border-radius: 3.5vh;
