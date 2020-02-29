@@ -256,7 +256,7 @@ body{
                 display: block;
                 // fo
             }         
-            #username, #userphone {
+            #username, #userphone, #states {
                 margin-top: 1vh;
                 display: inline-block;
                 height: 6vh;
@@ -264,7 +264,7 @@ body{
                 border: $color-theme solid;
                 border-radius: 4vh;
                 color: $color-theme;
-                font-size: 4vh;
+                font-size: 3vh;
                 @media (orientation: 'landscape'){
                     height: 7.5vh;                    
                     font-size: 5vh;
@@ -299,7 +299,7 @@ body{
                         justify-content: center;
                         align-items: center;
                         color: $color-white;
-                        font-size: 4vmax;
+                        font-size: 4vh;
                         position: absolute;
                         top: 0;
                         right: 0;
