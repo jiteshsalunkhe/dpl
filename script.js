@@ -94,5 +94,7 @@ const imageSizeSelector = (element, ImageName) => {
 (function imageSizeSetter(){
     let homeImage = document.querySelector('.homeIntro .backgroundImage');
     imageSizeSelector(homeImage, 'ship');
-    // window.addEventListener('orientationchange', imageSizeSelector(homeImage, 'ship'))
+    window.onorientationchange = function(){
+        location.reload();
+    }
 }());

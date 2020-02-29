@@ -140,7 +140,7 @@ body {
   }
 }
 
-.container main section {
+.container main.home section {
   font-size: 3.5vw;
   width: 100vw;
   display: -webkit-box;
@@ -158,7 +158,7 @@ body {
           align-items: center;
 }
 
-.container main section.homeIntro {
+.container main.home section.homeIntro {
   width: 100vw;
   height: 120vw;
   position: relative;
@@ -166,12 +166,12 @@ body {
 }
 
 @media (orientation: landscape) {
-  .container main section.homeIntro {
+  .container main.home section.homeIntro {
     height: calc(100vh - 6vmax);
   }
 }
 
-.container main section.homeIntro .backgroundImage {
+.container main.home section.homeIntro .backgroundImage {
   height: 100%;
   width: 100%;
   -webkit-filter: blur(2px);
@@ -181,7 +181,7 @@ body {
      object-fit: cover;
 }
 
-.container main section.homeIntro .content {
+.container main.home section.homeIntro .content {
   width: 100%;
   height: 100%;
   background-color: transparent;
@@ -201,7 +201,7 @@ body {
           align-items: center;
 }
 
-.container main section.homeIntro .content div {
+.container main.home section.homeIntro .content div {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -223,20 +223,20 @@ body {
           align-items: center;
 }
 
-.container main section.homeIntro .content div span {
+.container main.home section.homeIntro .content div span {
   font-weight: bold;
 }
 
-.container main section.homeIntro .content div span.a {
+.container main.home section.homeIntro .content div span.a {
   font-size: 2vmax;
   margin-bottom: 1vh;
 }
 
-.container main section.homeIntro .content div span.b {
+.container main.home section.homeIntro .content div span.b {
   font-size: 2.5vmax;
 }
 
-.container main section.homeIntro .content h1 {
+.container main.home section.homeIntro .content h1 {
   font-size: 15vw;
   color: #008080;
   text-shadow: #ccc 0 1vmin;
@@ -244,7 +244,7 @@ body {
   margin: 8vh 0;
 }
 
-.container main section.homeIntro .content h3 {
+.container main.home section.homeIntro .content h3 {
   font-size: 8vw;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -258,26 +258,26 @@ body {
 }
 
 @media (orientation: landscape) {
-  .container main section.homeIntro .content h1 {
+  .container main.home section.homeIntro .content h1 {
     margin: 6vh;
     font-size: 14vw;
   }
-  .container main section.homeIntro .content h3 {
+  .container main.home section.homeIntro .content h3 {
     font-size: 3.5vw;
   }
 }
 
-.container main section.moreIntro {
+.container main.home section.moreIntro {
   padding: 7vmax 10vw;
   text-align: center;
 }
 
-.container main section.moreIntro h1 {
-  font-size: 5vw;
+.container main.home section.moreIntro h1 {
+  font-size: 7vw;
   margin: 3.5vmax 0;
 }
 
-.container main section.services {
+.container main.home section.services {
   display: -ms-grid;
   display: grid;
   background-color: #eee;
@@ -289,22 +289,22 @@ body {
   font-size: 25px;
 }
 
-.container main section.services div {
+.container main.home section.services div {
   background-color: white;
   padding: 5vmin;
 }
 
-.container main section.services div h2 {
+.container main.home section.services div h2 {
   font-size: 30px;
   margin-bottom: 4vmax;
   color: #008080;
 }
 
-.container main section.services div:nth-child(odd) {
+.container main.home section.services div:nth-child(odd) {
   background-color: #ccc;
 }
 
-.container main section.services div img {
+.container main.home section.services div img {
   width: 25%;
   border-radius: 50%;
   float: left;
@@ -312,8 +312,118 @@ body {
   margin-right: 15%;
 }
 
-.container main section.services div p {
+.container main.home section.services div p {
   font-size: 20px;
+}
+
+.container main.about {
+  height: 100vh;
+}
+
+.container main.order {
+  width: 100vw;
+}
+
+.container main.order form {
+  background-color: #eee;
+  padding: 5vmin;
+  color: #008080;
+}
+
+.container main.order form label {
+  display: block;
+}
+
+.container main.order form #username, .container main.order form #userphone {
+  margin-top: 1vh;
+  display: inline-block;
+  height: 6vh;
+  width: 60vw;
+  border: #008080 solid;
+  border-radius: 4vh;
+  color: #008080;
+  font-size: 6vw;
+}
+
+@media (orientation: landscape) {
+  .container main.order form #username, .container main.order form #userphone {
+    height: 7.5vh;
+    font-size: 4vw;
+  }
+}
+
+.container main.order form h3 {
+  margin: 2vh 0;
+  font-size: 4vh;
+}
+
+.container main.order form section {
+  background-color: #ccc;
+  min-height: 50vh;
+  padding: 2vmin;
+}
+
+.container main.order form section div {
+  border: 2px solid #008080;
+  margin-bottom: 2vmin;
+  padding: 2vmin;
+  border-radius: 2vmin;
+  position: relative;
+}
+
+.container main.order form section div input[type=url] {
+  margin-bottom: 1vh;
+  width: 90%;
+  height: 4vh;
+}
+
+.container main.order form section div span {
+  border-radius: 50%;
+  background-color: red;
+  width: 5vh;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 4vmax;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.container main.order form section div textarea {
+  width: 100%;
+  min-height: 8vh;
+}
+
+.container main.order button {
+  cursor: pointer;
+  height: 7vh;
+  width: 40vw;
+  margin: 1vh 0 2vh 6.5vw;
+  background-color: #008080;
+  color: white;
+  font-size: 3vmax;
+  border: 1vmin solid #aaa;
+  border: .5vh solid red;
+  border-radius: 3.5vh;
+  -webkit-box-shadow: 0 1vh #aaa;
+          box-shadow: 0 1vh #aaa;
+  position: relative;
+}
+
+.container main.order button:hover, .container main.order button:active {
+  top: .4vh;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .container footer {

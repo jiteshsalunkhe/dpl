@@ -121,7 +121,7 @@ body{
         
 
     }
-    main{        
+    main.home{        
         section{
             font-size: 3.5vw;
             width: 100vw;
@@ -160,8 +160,6 @@ body{
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        // padding: 4vmin;
-                        // background-color: red;
                         span{
                             font-weight: bold;
                             &.a{
@@ -205,7 +203,7 @@ body{
                 padding: 7vmax 10vw;
                 text-align: center;
                 h1{
-                    font-size: 5vw;
+                    font-size: 7vw;
                     margin: 3.5vmax 0;
                 }
             }
@@ -245,6 +243,95 @@ body{
             
         }
     }
+    main.about{
+        height: 100vh;
+    }
+    main.order{
+        width: 100vw;
+        form{
+            background-color: #eee;
+            padding: 5vmin;
+            color: $color-theme;
+            label{
+                display: block;
+                // fo
+            }         
+            #username, #userphone {
+                margin-top: 1vh;
+                display: inline-block;
+                height: 6vh;
+                width: 60vw;
+                border: $color-theme solid;
+                border-radius: 4vh;
+                color: $color-theme;
+                font-size: 6vw;
+                @media (orientation: 'landscape'){
+                    height: 7.5vh;                    
+                    font-size: 4vw;
+                    
+                }
+            }
+            h3{
+                margin: 2vh 0;
+                font-size: 4vh;
+            }
+            section{
+                background-color: #ccc;
+                min-height: 50vh;
+                padding: 2vmin;
+                div{
+                    border: 2px solid $color-theme;
+                    margin-bottom: 2vmin;
+                    padding: 2vmin;
+                    border-radius: 2vmin;
+                    position: relative;
+                    input[type=url]{
+                        margin-bottom: 1vh;
+                        width: 90%;
+                        height: 4vh;
+                    }
+                    span{
+                        border-radius: 50%;
+                        background-color: red;
+                        width: 5vh;
+                        height: 5vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: $color-white;
+                        font-size: 4vmax;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        cursor: pointer;
+                    }
+                    textarea{
+                        width: 100%;
+                        min-height: 8vh;
+                    }
+                }
+            }
+        }
+        button{
+            cursor: pointer;
+            height: 7vh;
+            width: 40vw;
+            margin: 1vh 0 2vh 6.5vw;
+            background-color: $color-theme;
+            color: $color-white;
+            font-size: 3vmax;
+            border: 1vmin solid #aaa;
+            border: .5vh solid red;
+            border-radius: 3.5vh;
+            box-shadow: 0 1vh #aaa;
+            position: relative;
+            &:hover, &:active{
+                top: .4vh;
+                box-shadow: none;
+            }
+        }
+        
+    }
 
     footer{
         background-color: $color-theme;
@@ -267,7 +354,7 @@ body{
                 box-sizing: content-box;
                 padding: 2vmin;
                 border-radius: 2vmax;
-                border: 2px solid white;
+                border: 2px solid $color-white;
                 box-shadow: 0px .5vmax  $color-white;
                 &:hover, &:active{
                     top: .4vmax;
