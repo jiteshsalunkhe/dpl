@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="google-site-verification" content="later" />
+    <meta name="google-site-verification" content="later" >
     <meta name="description"
         content="Welcome to Dames Procurement and Logistics (DPL), your one stop service center for your china to Nigeria importation">
     <link rel="stylesheet" href="style.css">
@@ -30,15 +30,16 @@
         </header>
 
         <main class="order">            
-                <form action="" method="post">
+                <form id="form" action="https://api.slapform.com/info@dpl.com.ng" method="post">                
+                    
                     <label>NAME
                         <input type="text" name="username" id="username" placeholder="Enter name" required>
                     </label>
                     <label>WhatsApp No
-                        <input type="tel" name="phone" id="userphone" placeholder="09013345956" required>
+                        <input type="tel" name="phone" id="phone" placeholder="09013345956" required>
                     </label>
                     <label> Delivery State
-                        <select name="states" id="states"  required size="1" >
+                        <select name="state" id="state"  required size="1" >
                             <option value="">--Choose a state--</option>
                             <option value="Abia">Abia</option>
                             <option value="Adamawa">Adamawa</option>
@@ -82,13 +83,13 @@
                     <h3>Place order below</h3>
                     <section class="orderList">
                         <div >
-                            <input type="url" placeholder="Input order link">
-                            <textarea name="desc" id="desc" cols="30" rows="2" placeholder="additional information"></textarea>
+                            <input type="url" name="link1"  id="link" placeholder="Input order link">
+                            <textarea name="desc1"  id="desc" cols="30" rows="2" placeholder="additional information"></textarea>
                         </div>
                     </section>
+                    <button class="add">add order</button>
+                    <button type="submit" class="submit" >submit</button>
                 </form>
-                <button class="add">add order</button>
-                <button type="submit" class="submit">submit</button>
         </main>
 
         <footer>
@@ -98,7 +99,7 @@
                         +2349013345956</span></a>
                 <a href="mailto:info@dpl.com.ng"><img src="./img/email.svg" alt="email address"><span>
                         info@dpl.com.ng</span></a>
-                <a href="https://instagram.com/dames_procurement"><img src="./img/instagram.svg" alt="instagram"><span>
+                <a href="https://instagram.com/dames_procurement" target="_blank" rel="noreferrer nofollow"><img src="./img/instagram.svg" alt="instagram"><span>
                         /dames_procurement</span></a>
             </div>
             <h3>copyright &#169; <span class="cRY">.</span> Dames Procurement and logistics</h3>
@@ -107,6 +108,7 @@
 
         </footer>
     </div>
+
 </body>
 
 </html>

@@ -254,9 +254,15 @@ body{
             color: $color-theme;
             label{
                 display: block;
-                // fo
-            }         
-            #username, #userphone, #states {
+                font-size: 2vh;
+                margin-bottom: 1vh;
+                @media (orientation: 'landscape'){
+                    height: 7.5vh;                    
+                    font-size: 5vh;
+                    
+                }
+            }        
+            #username, #phone, #state {
                 margin-top: 1vh;
                 display: inline-block;
                 height: 6vh;
@@ -265,6 +271,7 @@ body{
                 border-radius: 4vh;
                 color: $color-theme;
                 font-size: 3vh;
+                padding: 0 1vh;
                 @media (orientation: 'landscape'){
                     height: 7.5vh;                    
                     font-size: 5vh;
@@ -289,45 +296,47 @@ body{
                         margin-bottom: 1vh;
                         width: 90%;
                         height: 4vh;
+                        font-size: 2.5vh;
                     }
                     span{
                         border-radius: 50%;
                         background-color: red;
-                        width: 5vh;
-                        height: 5vh;
+                        color: $color-white;
+                        width: 4vh;
+                        height: 4vh;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        color: $color-white;
-                        font-size: 4vh;
+                        font-size: 3vh;
                         position: absolute;
-                        top: 0;
-                        right: 0;
+                        top: 1vmin;
+                        right: 1vmin;
                         cursor: pointer;
                     }
                     textarea{
                         width: 100%;
                         min-height: 8vh;
+                        font-size: 2vh;
                     }
                 }
             }
-        }
-        button{
-            cursor: pointer;
-            height: 7vh;
-            width: 40vw;
-            margin: 1vh 0 2vh 6.5vw;
-            background-color: $color-theme;
-            color: $color-white;
-            font-size: 3.5vh;
-            border: 1vmin solid #aaa;
-            border: .5vh solid red;
-            border-radius: 3.5vh;
-            box-shadow: 0 1vh #aaa;
-            position: relative;
-            &:hover, &:active{
-                top: .4vh;
-                box-shadow: none;
+            button{
+                cursor: pointer;
+                height: 7vh;
+                width: 35vw;
+                margin: 2vmax 0 0 6.5vw;
+                background-color: $color-theme;
+                color: $color-white;
+                font-size: 3.5vh;
+                border: 1vmin solid #aaa;
+                border: .5vh solid red;
+                border-radius: 3.5vh;
+                box-shadow: 0 1vh #aaa;
+                position: relative;
+                &:hover, &:active{
+                    top: .4vh;
+                    box-shadow: none;
+                }
             }
         }
         

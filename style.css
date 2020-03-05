@@ -332,9 +332,18 @@ body {
 
 .container main.order form label {
   display: block;
+  font-size: 2vh;
+  margin-bottom: 1vh;
 }
 
-.container main.order form #username, .container main.order form #userphone, .container main.order form #states {
+@media (orientation: landscape) {
+  .container main.order form label {
+    height: 7.5vh;
+    font-size: 5vh;
+  }
+}
+
+.container main.order form #username, .container main.order form #phone, .container main.order form #state {
   margin-top: 1vh;
   display: inline-block;
   height: 6vh;
@@ -343,10 +352,11 @@ body {
   border-radius: 4vh;
   color: #008080;
   font-size: 3vh;
+  padding: 0 1vh;
 }
 
 @media (orientation: landscape) {
-  .container main.order form #username, .container main.order form #userphone, .container main.order form #states {
+  .container main.order form #username, .container main.order form #phone, .container main.order form #state {
     height: 7.5vh;
     font-size: 5vh;
   }
@@ -375,13 +385,15 @@ body {
   margin-bottom: 1vh;
   width: 90%;
   height: 4vh;
+  font-size: 2.5vh;
 }
 
 .container main.order form section div span {
   border-radius: 50%;
   background-color: red;
-  width: 5vh;
-  height: 5vh;
+  color: white;
+  width: 4vh;
+  height: 4vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -391,24 +403,24 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
-  font-size: 4vh;
+  font-size: 3vh;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 1vmin;
+  right: 1vmin;
   cursor: pointer;
 }
 
 .container main.order form section div textarea {
   width: 100%;
   min-height: 8vh;
+  font-size: 2vh;
 }
 
-.container main.order button {
+.container main.order form button {
   cursor: pointer;
   height: 7vh;
-  width: 40vw;
-  margin: 1vh 0 2vh 6.5vw;
+  width: 35vw;
+  margin: 2vmax 0 0 6.5vw;
   background-color: #008080;
   color: white;
   font-size: 3.5vh;
@@ -420,7 +432,7 @@ body {
   position: relative;
 }
 
-.container main.order button:hover, .container main.order button:active {
+.container main.order form button:hover, .container main.order form button:active {
   top: .4vh;
   -webkit-box-shadow: none;
           box-shadow: none;
