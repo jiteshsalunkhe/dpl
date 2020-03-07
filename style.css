@@ -292,11 +292,12 @@ body {
 .container main.home section.services div {
   background-color: white;
   padding: 5vmin;
+  height: 500px;
 }
 
 .container main.home section.services div h2 {
   font-size: 30px;
-  margin-bottom: 4vmax;
+  margin-bottom: 2.5vmax;
   color: #008080;
 }
 
@@ -316,8 +317,39 @@ body {
   font-size: 20px;
 }
 
+.container main.home section.services div p.deep {
+  margin-top: 2vmin;
+}
+
+.container main.home section.services div p.deep b {
+  color: #008080;
+  text-transform: uppercase;
+}
+
+.container main.home section.services div p.deeper {
+  margin-top: 2vmin;
+  color: #008080;
+}
+
 .container main.about {
-  height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 7vmin;
+}
+
+.container main.about h1 {
+  font-size: 8vmin;
+  margin: 5vmin;
+  text-align: center;
+  text-transform: uppercase;
+  color: #008080;
+}
+
+.container main.about p {
+  font-size: 4vmin;
+  line-height: 6vmin;
+  margin-bottom: 6vmin;
+  text-indent: 8vmin;
 }
 
 .container main.order {

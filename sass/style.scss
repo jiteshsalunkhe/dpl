@@ -218,9 +218,10 @@ body{
                 div{
                     background-color: white;
                     padding: 5vmin;
+                    height: 500px;
                     h2{
                         font-size: 30px;
-                        margin-bottom: 4vmax;
+                        margin-bottom: 2.5vmax;
                         color: $color-theme;
                     }
                     &:nth-child(odd){
@@ -236,6 +237,17 @@ body{
                     }
                     p{
                         font-size: 20px;
+                        &.deep{
+                            margin-top: 2vmin;
+                            b{
+                                color: $color-theme;
+                                text-transform: uppercase;
+                            }
+                        }
+                        &.deeper{
+                            margin-top: 2vmin;
+                            color: $color-theme;
+                        }
                     }                  
                 }
             }
@@ -244,7 +256,22 @@ body{
         }
     }
     main.about{
-        height: 100vh;
+        min-height: 100vh;
+        width: 100vw;
+        padding: 7vmin;
+        h1{
+            font-size: 8vmin;
+            margin: 5vmin;
+            text-align: center;
+            text-transform: uppercase;
+            color: $color-theme;
+        }
+        p{
+            font-size: 4vmin;
+            line-height: 6vmin;
+            margin-bottom: 6vmin;
+            text-indent: 8vmin;
+        }
     }
     main.order{
         width: 100vw;

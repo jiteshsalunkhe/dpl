@@ -49,9 +49,6 @@ let descArray = ['desc1'];
 
         linkArray.push(url.name);
         descArray.push(desc.name);
-        
-        // console.log(linkArray);
-        // console.log(descArray);
     })
 }());
 
@@ -59,12 +56,8 @@ let descArray = ['desc1'];
     let target = document.querySelector('section.orderList');
     target.addEventListener('click', e => {
         if(e.target.className === 'delOrder'){
-            // console.log(e.target.parentElement.querySelector('#link').name);
-            // console.log(e.target.parentElement.querySelector('#desc').name);
             let linkIndex = linkArray.indexOf(`${e.target.parentElement.querySelector('#link').name}`);
             let descIndex = descArray.indexOf(`${e.target.parentElement.querySelector('#desc').name}`);
-            // console.log(linkIndex);
-            // console.log(descIndex);
             linkArray.splice(`${linkIndex}`, 1);
             descArray.splice(`${descIndex}`, 1);
             const p = e.target.parentElement;
