@@ -78,7 +78,7 @@ body {
   margin-top: 10vh;
 }
 
-.container header nav ul li :link {
+.container header nav ul li a {
   color: #008080;
 }
 
@@ -89,7 +89,7 @@ body {
   padding: 3vh 0 3vh 4vh;
 }
 
-.container header nav ul li.active :link {
+.container header nav ul li.active a {
   color: white;
 }
 
@@ -126,7 +126,7 @@ body {
   .container header nav ul li:first-child {
     margin: 0 1.5vw;
   }
-  .container header nav ul li :link {
+  .container header nav ul li a {
     color: white;
   }
   .container header nav ul li.active {
@@ -135,7 +135,7 @@ body {
             box-sizing: content-box;
     padding: 1vmax 1vw 1vmax 1vw;
   }
-  .container header nav ul li.active :link {
+  .container header nav ul li.active a {
     color: #008080;
   }
 }
@@ -331,6 +331,18 @@ body {
   color: #008080;
 }
 
+.container main.home section.services div p.paragraph {
+  text-indent: 40px;
+  margin-top: 2vmin;
+}
+
+.container main.home section.services div a {
+  color: white;
+  background-color: #008080;
+  padding: 2px 5px;
+  border-radius: 20px;
+}
+
 .container main.about {
   min-height: 100vh;
   width: 100vw;
@@ -455,7 +467,7 @@ body {
   margin: 2vmax 0 0 6.5vw;
   background-color: #008080;
   color: white;
-  font-size: 3.5vh;
+  font-size: 3vh;
   border: 1vmin solid #aaa;
   border: .5vh solid red;
   border-radius: 3.5vh;

@@ -65,14 +65,14 @@ body{
                     &:first-child{
                         margin-top: 10vh;
                     }                    
-                    :link{
+                    a{
                         color: $color-theme;
                     }
                     &.active{
                         background-color: $color-theme;
                         box-sizing: content-box;
                         padding:3vh 0 3vh 4vh;
-                        :link{
+                        a{
                             color: $color-white;
                         }
                     }
@@ -98,18 +98,18 @@ body{
                         font-weight: bolder;
                         margin: 0 0 6vh 7vw;
                         padding: .5vw;
-                        margin: 0 1.5vw;                     
+                        margin: 0 1.5vw;                 
                         &:first-child{                            
                         margin: 0 1.5vw;
                         }
-                        :link{
+                        a{
                             color: $color-white;
                         }
                         &.active{
                             background-color: $color-white;
                             box-sizing: content-box;
                             padding:1vmax 1vw 1vmax 1vw;
-                            :link{
+                            a{
                                 color: $color-theme;
                             }
                         }
@@ -248,7 +248,17 @@ body{
                             margin-top: 2vmin;
                             color: $color-theme;
                         }
-                    }                  
+                        &.paragraph{
+                            text-indent: 40px;
+                            margin-top: 2vmin;
+                        }
+                    }
+                    a{
+                        color: $color-white;
+                        background-color: $color-theme;
+                        padding: 2px 5px;
+                        border-radius: 20px;
+                    }                 
                 }
             }
             
@@ -354,7 +364,7 @@ body{
                 margin: 2vmax 0 0 6.5vw;
                 background-color: $color-theme;
                 color: $color-white;
-                font-size: 3.5vh;
+                font-size: 3vh;
                 border: 1vmin solid #aaa;
                 border: .5vh solid red;
                 border-radius: 3.5vh;
