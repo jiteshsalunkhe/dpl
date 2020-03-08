@@ -292,7 +292,7 @@ body {
 .container main.home section.services div {
   background-color: white;
   padding: 5vmin;
-  height: 500px;
+  height: 100%;
 }
 
 .container main.home section.services div h2 {
