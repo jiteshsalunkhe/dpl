@@ -337,10 +337,9 @@ body {
 }
 
 .container main.home section.services div a {
-  color: white;
-  background-color: #008080;
-  padding: 2px 5px;
-  border-radius: 20px;
+  color: #008080;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .container main.about {

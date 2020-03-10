@@ -254,10 +254,9 @@ body{
                         }
                     }
                     a{
-                        color: $color-white;
-                        background-color: $color-theme;
-                        padding: 2px 5px;
-                        border-radius: 20px;
+                        color: $color-theme;
+                        text-decoration: underline;
+                        font-weight: bold;
                     }                 
                 }
             }
