@@ -18,7 +18,7 @@ body {
 }
 
 .container header {
-  background-color: #008080;
+  background-color: #RRGGBB;
   width: 100vw;
   height: 6vmax;
   position: -webkit-sticky;
@@ -83,7 +83,7 @@ body {
 }
 
 .container header nav ul li.active {
-  background-color: #008080;
+  background-color: #RRGGBB;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   padding: 3vh 0 3vh 4vh;
